@@ -15,6 +15,14 @@ print(wine.head())
 
 # generate statistical summaries
 summary = wine.describe()
+print(summary)
+
+wineNormalized = wine
+ncols = len(wineNormalized.columns)
+
+for i in range(ncols):
+    mean = summary.iloc[1, i]
+    sd = summary.iloc[2, i]
 
 
 
