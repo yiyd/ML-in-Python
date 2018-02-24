@@ -12,3 +12,10 @@ target_url = ("http://archive.ics.uci.edu/ml/machine-learning-databases/wine-qua
 wine = pd.read_csv(target_url, header=0, sep=";")
 
 print(wine.head())
+
+# generate statistical summaries
+summary = wine.describe()
+
+
+
+
